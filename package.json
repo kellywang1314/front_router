@@ -1,0 +1,27 @@
+{
+  "name": "front_router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "webpack -p"
+  },
+  "keywords": [
+    "前端路由"
+  ],
+  "author": "ynan_wang",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
