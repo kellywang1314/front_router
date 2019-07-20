@@ -1,4 +1,8 @@
 import HashLoad from "./hash/index"
 import HistoryLoad from './history/index'
-HashLoad()
-HistoryLoad()
+if(location.href.indexOf('hash')!==-1){
+    HashLoad()
+}else{
+    HistoryLoad()
+}
+

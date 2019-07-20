@@ -1,23 +1,23 @@
 export default class HashRouter{
     constructor(){
-        this.routers1 = {}
+        this.routers = {}
         window.addEventListener('hashchange',this.load.bind(this),false)
     }
 
     register(hash, callback){
-        this.routers1[hash] = callback
+        this.routers[hash] = callback
     }
 
     registerIndex(callback){
-        this.routers1['index'] = callback
+        this.routers['index'] = callback
     }
 
     load(){
         let hash = location.hash,hander
         if(!hash){
-            hander = this.routers1.index
+            hander = this.routers.index
         }else{
-            hander = this.routers1[hash]
+            hander = this.routers[hash]
         }
         hander.call(this)
     }

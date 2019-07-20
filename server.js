@@ -19,7 +19,7 @@ app.get('/history',function(req,res){
         res.send(result)
         res.end()
     })
-    res.sendFile(__dirname + '/public/' + 'history.html')
+    //res.sendFile(__dirname + '/public/' + 'history.html')
 })
 
 //使用webpack-dev-middleware打包之后的文件在内存中，并没有直接输出，所以访问需要读内存
